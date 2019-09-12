@@ -7,7 +7,7 @@
 Java 使用了 C 的所有执行控制语句，因此对于熟悉 C/C++ 编程的人来说，这部分内容轻车熟路。大多数面向过程编程语言都有共通的某种控制语句。在 Java 中，涉及的关键字包括 **if-else，while，do-while，for，return，break** 和选择语句 **switch**。 Java 并不支持备受诟病的 **goto**（尽管它在某些特殊场景中依然是最行之有效的方法）。 尽管如此，在 Java 中我们仍旧可以进行类似的逻辑跳转，但较之典型的 **goto** 用法限制更多。
 
 
-## true 和 false
+## true和false
 
 所有的条件语句都利用条件表达式的“真”或“假”来决定执行路径。举例：
 `a == b`。它利用了条件表达式 `==` 来比较 `a` 与 `b` 的值是否相等。 该表达式返回 `true` 或 `false`。代码示例：
@@ -444,7 +444,7 @@ public class BreakAndContinue {
 <!--The Infamous “Goto”-->
 ## 臭名昭著的 goto
 
-[**goto** 关键字](https://en.wikipedia.org/wiki/Goto) 很早就在程序设计语言中出现。事实上，**goto** 起源于[汇编](https://en.wikipedia.org/wiki/Assembly_language)（assembly language）语言中的程序控制：“若条件 A 成立，则跳到这里；否则跳到那里”。如果你读过由由编译器编译后的代码，你会发现在其程序控制中充斥了大量的跳转。较之汇编产生的代码直接运行在硬件 CPU 中，Java 也会产生自己的“汇编代码”（字节码），只不过它是运行在 Java 虚拟机里的（Java Virtual Machine）。
+[**goto** 关键字](https://en.wikipedia.org/wiki/Goto) 很早就在程序设计语言中出现。事实上，**goto** 起源于[汇编](https://en.wikipedia.org/wiki/Assembly_language)（assembly language）语言中的程序控制：“若条件 A 成立，则跳到这里；否则跳到那里”。如果你读过由编译器编译后的代码，你会发现在其程序控制中充斥了大量的跳转。较之汇编产生的代码直接运行在硬件 CPU 中，Java 也会产生自己的“汇编代码”（字节码），只不过它是运行在 Java 虚拟机里的（Java Virtual Machine）。
 
 一个源码级别跳转的 **goto**，为何招致名誉扫地呢？若程序总是从一处跳转到另一处，还有什么办法能识别代码的控制流程呢？随着 *Edsger Dijkstra*发表著名的 “Goto 有害” 论（*Goto considered harmful*）以后，**goto** 便从此失宠。甚至有人建议将它从关键字中剔除。
 
